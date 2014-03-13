@@ -52,20 +52,20 @@ module ChefDK
         # test suite by default. We will be able to switch to that command when
         # this is merged:
         # https://github.com/berkshelf/berkshelf/pull/1021
-        :test_cmd => "bundle exec rspec --color --format progress spec/unit --tag ~hg && \
+        :test_cmd => "sudo bundle exec rspec --color --format progress spec/unit --tag ~hg && \
           bundle exec cucumber --color --format progress --tags ~@no_run --strict"
 
       component "test-kitchen",
         :base_dir => "test-kitchen",
-        :test_cmd => "bundle exec rake"
+        :test_cmd => "sudo bundle exec rake"
 
       component "chef-client",
         :base_dir => "chef",
-        :test_cmd => "bundle exec rspec"
+        :test_cmd => "sudo bundle exec rspec"
 
       component "chef-dk",
         :base_dir => "chef-dk",
-        :test_cmd => "bundle exec rspec"
+        :test_cmd => "sudo bundle exec rspec"
 
       attr_reader :omnibus_dir
       attr_reader :verification_threads
@@ -120,7 +120,8 @@ module ChefDK
               :env => {
                 # Add the embedded/bin to the PATH so that bundle executable can
                 # be found while running the tests.
-                "PATH" => "#{bin_path}:#{ENV['PATH']}"
+                "PATH" => "#{bin_path}:#{ENV['PATH']}",
+                "HOME" => ENV["TMP"]
               },
               :timeout => 3600
 
