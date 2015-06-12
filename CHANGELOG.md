@@ -1,6 +1,14 @@
 # Chef Development Kit Changelog
 
-# Last Release: 0.6.0
+# Last Release: 0.6.2
+* I forgot to update a test that was failing in 0.6.1.  Travis didn't catch
+  it because my PR was not against master.
+
+# 0.6.1
+* [420](https://github.com/chef/chef-dk/issues/420): Fixing Windows builds
+   where SSL is not working - see bug for details.
+
+# 0.6.0
 * [chef-dk#383](https://github.com/chef/chef-dk/pull/383): Add `chef
   provision` command, a CLI for running Chef Provisioning recipes.
 * [Omnibus-Chef #385](https://github.com/chef/omnibus-chef/pull/385): Updated
