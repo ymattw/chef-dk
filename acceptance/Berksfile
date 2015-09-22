@@ -1,0 +1,3 @@
+source 'https://supermarket.chef.io'
+
+cookbook 'chefdk-acceptance', path: 'test/fixtures/cookbooks/chefdk-acceptance'
