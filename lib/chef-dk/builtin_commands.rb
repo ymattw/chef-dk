@@ -26,6 +26,8 @@ ChefDK.commands do |c|
   c.builtin "gem", :GemForwarder, require_path: "chef-dk/command/gem",
     desc: "Runs the `gem` command in context of the embedded ruby"
 
+  c.builtin "desktop", :Desktop, desc: "Configure development desktop with additional tools and utilities"
+
   c.builtin "generate", :Generate, desc: "Generate a new app, cookbook, or component"
 
   c.builtin "shell-init", :ShellInit, desc: "Initialize your shell to use ChefDK as your primary ruby"
