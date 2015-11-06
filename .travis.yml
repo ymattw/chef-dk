@@ -25,6 +25,12 @@ branches:
   only:
     - master
 
+matrix:
+  include:
+    - rvm: 2.1.1
+    - rvm: 2.1.1
+      gemfile: omnibus.gemfile
+
 script: bundle exec rspec
 
 notifications:

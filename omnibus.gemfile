@@ -1,0 +1,64 @@
+#
+# Copyright:: Copyright (c) 2014 Chef Software Inc.
+# License:: Apache License, Version 2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+source 'https://rubygems.org'
+
+gemspec name: "chef-dk"
+
+# Set the versions of things we install
+gem 'ohai', github: 'chef/ohai', branch: 'v8.7.0'
+gem 'chef', github: 'chef/chef', branch: '12.5.1-omnibus'
+gem 'nokogiri', '1.6.3.1'
+gem 'berkshelf', github: 'jkeiser/berkshelf', branch: 'jk/solve-2.0', groups: [ :asdfasdfs, :development ]
+gem 'chef-vault', github: 'Nordstrom/chef-vault', branch: 'v2.6.1'
+gem 'inspec', github: 'chef/inspec'
+gem 'test-kitchen', github: 'test-kitchen/test-kitchen', branch: 'v1.4.2'
+gem 'kitchen-inspec', github: 'chef/kitchen-inspec'
+gem 'kitchen-vagrant', github: 'test-kitchen/kitchen-vagrant'
+gem 'yajl-ruby', '1.2.1'
+gem 'chef-provisioning-aws', github: 'chef/chef-provisioning-aws', branch: 'v1.6.1'
+gem 'chef-provisioning-azure', github: 'chef/chef-provisioning-azure', branch: 'v0.4.0'
+gem 'chef-provisioning-fog', github: 'chef/chef-provisioning-fog', branch: 'v0.15.0'
+gem 'chef-provisioning-vagrant', github: 'chef/chef-provisioning-vagrant', branch: 'v0.10.0'
+gem 'dep-selector-libgecode', '1.0.2'
+gem 'foodcritic', github: 'acrmp/foodcritic', branch: 'v5.0.0'
+gem 'chefspec', '4.4.0'
+gem 'fauxhai', '2.3.0'
+gem 'rubocop', '0.31.0'
+gem 'knife-spork', '1.5.0'
+gem 'winrm-transport', '1.0.2'
+gem 'knife-windows', '1.1.1'
+
+# Dev dependencies from berkshelf, for chef verify
+gem 'aruba',         '~> 0.6'
+gem 'chef-zero',     '~> 4.0'
+gem 'fuubar',        '~> 2.0'
+gem 'rspec',         '~> 3.0'
+gem 'spork',         '~> 0.9'
+gem 'webmock',       '~> 1.11'
+gem 'yard',          '~> 0.8'
+
+# Test and integration dependencies from berkshelf, for chef verify
+gem 'minitest', '~> 5.5'
+gem 'concurrent-ruby', '~> 0.9'
+
+
+group(:dev) do
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'ruby_gntp'
+end
