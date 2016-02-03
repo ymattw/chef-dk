@@ -92,6 +92,7 @@ override :'chef-provisioning-aws', version: "v1.7.0"
 override :'chef-provisioning-azure', version: "v0.4.0"
 override :'chef-provisioning-fog', version: "v0.15.0"
 override :'chef-provisioning-vagrant', version: "v0.10.0"
+override :'dep-selector-libgecode', version: "1.1.0.beta.1"
 
 dependency "preparation"
 dependency "chefdk"
