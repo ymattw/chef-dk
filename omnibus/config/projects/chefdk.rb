@@ -61,6 +61,7 @@ override :libxslt,        version: "1.1.28"
 
 if windows?
   override :'ruby-windows', version: "2.1.6"
+  override :'openssl-windows', version: "1.0.1r"
   if windows_arch_i386?
     override :'ruby-windows-devkit', version: "4.7.2-20130224"
   end
