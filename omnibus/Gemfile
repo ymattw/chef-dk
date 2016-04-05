@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'omnibus', git: 'https://github.com/chef/omnibus.git'
-gem 'omnibus-software', git: 'https://github.com/chef/omnibus-software.git'
+gem 'omnibus-software', git: 'https://github.com/chef/omnibus-software.git', branch: 'salam/revert-stuff'
 
 # `json_pure` has a bug in it that is failing ChefDK builds.  We include the
 # json gem into the Gemfile so that running `bundle exec` will have
