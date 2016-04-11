@@ -2,6 +2,21 @@ name "chef-dk-complete"
 
 license :project_license
 
+# For nokogiri - we want to build these early since they rarely change
+dependency "libxml2"
+dependency "libxslt"
+dependency "libiconv"
+dependency "liblzma"
+dependency "zlib"
+
+# For nokogiri - we want to build these early since they rarely change
+dependency "libarchive"
+
+# ruby and bundler and friends
+dependency "ruby"
+dependency "rubygems"
+dependency "bundler"
+
 dependency "chef-dk"
 dependency "chef-dk-appbundle"
 if windows?

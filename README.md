@@ -316,10 +316,7 @@ Once you've made any changes you want, you have to update the lockfiles that act
 * To update specific gems only, run `rake bundle:update[gem1 gem2 ...]`
 * **`bundle update` and `bundle install` will *not* work, on purpose:** the rake task handles both the windows and non-windows lockfiles and updates them in sync.
 
-*
-
-
-To perform a full update of all dependencies everywhere, run `rake dependencies`. This will update the `Gemfile.lock`, `Gemfile.windows.lock`, `omnibus/Gemfile.lock`, `acceptance/Gemfile.lock`, `omnibus/Berksfile.lock`, and `omnibus_overrides.rb`.  It will also show you any outdated dependencies due to conflicting constraints. Some outdated dependencies are to be expected; it will inform you if any new ones appear that we don't know about, and tell you how to proceed.
+If you want to update not only your changes, but also the build system and tests, run `rake dependencies`. This will update the `Gemfile.lock`, `Gemfile.windows.lock`, `omnibus/Gemfile.lock`, `acceptance/Gemfile.lock`, `omnibus/Berksfile.lock`, and `omnibus_overrides.rb`.  It will also show you any outdated dependencies due to conflicting constraints. Some outdated dependencies are to be expected; it will inform you if any new ones appear that we don't know about, and tell you how to proceed.
 
 # How the ChefDK Builds and Versions
 
