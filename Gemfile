@@ -53,6 +53,14 @@ group(:omnibus_package) do
   gem "knife-windows"
   gem "ohai", ">= 8.13.0"
   gem "test-kitchen"
+  gem "mixlib-install"
+
+  # For Delivery build node
+  gem "chef-sugar"
+  gem "opscode-pushy-client", github: "chef/opscode-pushy-client"
+  gem "knife-supermarket"
+  gem "mixlib-versioning"
+  gem "artifactory"
 
   # All of the following used to be software definitions we included:
   gem "knife-spork"
