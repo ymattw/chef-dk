@@ -7,12 +7,12 @@ GIT
 
 GIT
   remote: git://github.com/chef/chef.git
-  revision: f57aba2e082f89036117013ecad5fdc9d223c6c2
-  branch: v12.10.7
+  revision: 32c97e78f2c4b95ba05883b63df9308e9ec85129
+  branch: v12.10.11
   specs:
-    chef (12.10.7)
+    chef (12.10.11)
       bundler (>= 1.10)
-      chef-config (= 12.10.7)
+      chef-config (= 12.10.11)
       chef-zero (~> 4.5)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -36,9 +36,9 @@ GIT
       specinfra (~> 2.10)
       syslog-logger (~> 1.6)
       uuidtools (~> 2.1.5)
-    chef (12.10.7-universal-mingw32)
+    chef (12.10.11-universal-mingw32)
       bundler (>= 1.10)
-      chef-config (= 12.10.7)
+      chef-config (= 12.10.11)
       chef-zero (~> 4.5)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -73,10 +73,20 @@ GIT
       win32-service (~> 0.8.7)
       windows-api (~> 0.4.4)
       wmi-lite (~> 1.0)
-    chef-config (12.10.7)
+    chef-config (12.10.11)
       fuzzyurl (~> 0.8.0)
       mixlib-config (~> 2.0)
       mixlib-shellout (~> 2.0)
+
+GIT
+  remote: git://github.com/chef/opscode-pushy-client.git
+  revision: af8a3368dbeb7ec8b1e52f7d28cdb9caee60ac50
+  specs:
+    opscode-pushy-client (2.0.2)
+      chef (>= 12.5)
+      ffi-rzmq
+      ohai
+      uuidtools
 
 PATH
   remote: .
@@ -183,6 +193,7 @@ GEM
       retryable
     chef-provisioning-vagrant (0.11.0)
       chef-provisioning
+    chef-sugar (3.3.0)
     chef-vault (2.9.0)
     chef-zero (4.6.1)
       ffi-yajl (~> 2.2)
@@ -228,6 +239,10 @@ GEM
       net-ssh
     ffi (1.9.10)
     ffi (1.9.10-x86-mingw32)
+    ffi-rzmq (2.0.4)
+      ffi-rzmq-core (>= 1.0.1)
+    ffi-rzmq-core (1.0.4)
+      ffi (~> 1.9)
     ffi-yajl (2.2.3)
       libyajl2 (~> 1.2)
     fission (0.5.0)
@@ -283,9 +298,9 @@ GEM
       fog-json (~> 1.0)
       fog-xml (~> 0.1)
       ipaddress (~> 0.8)
-    fog-core (1.37.0)
+    fog-core (1.38.0)
       builder
-      excon (~> 0.45)
+      excon (~> 0.49)
       formatador (~> 0.2)
     fog-dynect (0.0.3)
       fog-core
@@ -350,7 +365,7 @@ GEM
     fog-voxel (0.1.0)
       fog-core
       fog-xml
-    fog-vsphere (0.6.3)
+    fog-vsphere (0.6.4)
       fog-core
       rbvmomi (~> 1.8)
     fog-xenserver (0.2.3)
@@ -459,6 +474,8 @@ GEM
       chef (>= 11.0.0)
       diffy (>= 3.0.1)
       git (>= 1.2.5)
+    knife-supermarket (0.2.4)
+      chef (>= 0.10.10)
     knife-windows (1.4.0)
       winrm (~> 1.7)
     launchy (2.4.3)
@@ -530,7 +547,7 @@ GEM
       rack (>= 1.2, < 3)
     octokit (4.3.0)
       sawyer (~> 0.7.0, >= 0.5.3)
-    ohai (8.15.0)
+    ohai (8.15.1)
       chef-config (>= 12.5.0.alpha.1, < 13)
       ffi (~> 1.9)
       ffi-yajl (~> 2.2)
@@ -739,6 +756,7 @@ PLATFORMS
 
 DEPENDENCIES
   appbundler!
+  artifactory
   berkshelf
   chef!
   chef-dk!
@@ -747,6 +765,7 @@ DEPENDENCIES
   chef-provisioning-azure (>= 0.5.0)
   chef-provisioning-fog (>= 0.18.0)
   chef-provisioning-vagrant (>= 0.11.0)
+  chef-sugar
   chef-vault
   cheffish (>= 2.0.3)
   chefspec
@@ -761,9 +780,13 @@ DEPENDENCIES
   kitchen-inspec
   kitchen-vagrant
   knife-spork
+  knife-supermarket
   knife-windows
+  mixlib-install
+  mixlib-versioning
   nokogiri
   ohai (>= 8.13.0)
+  opscode-pushy-client!
   pry
   pry-byebug
   pry-remote
