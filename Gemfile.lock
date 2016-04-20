@@ -7,12 +7,12 @@ GIT
 
 GIT
   remote: git://github.com/chef/chef.git
-  revision: 32c97e78f2c4b95ba05883b63df9308e9ec85129
-  branch: v12.10.11
+  revision: 2864ac87c3faf3fc8bbc206c09c5f2109b3ab518
+  branch: v12.10.13
   specs:
-    chef (12.10.11)
+    chef (12.10.13)
       bundler (>= 1.10)
-      chef-config (= 12.10.11)
+      chef-config (= 12.10.13)
       chef-zero (~> 4.5)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -36,9 +36,9 @@ GIT
       specinfra (~> 2.10)
       syslog-logger (~> 1.6)
       uuidtools (~> 2.1.5)
-    chef (12.10.11-universal-mingw32)
+    chef (12.10.13-universal-mingw32)
       bundler (>= 1.10)
-      chef-config (= 12.10.11)
+      chef-config (= 12.10.13)
       chef-zero (~> 4.5)
       diff-lcs (~> 1.2, >= 1.2.4)
       erubis (~> 2.7)
@@ -73,7 +73,7 @@ GIT
       win32-service (~> 0.8.7)
       windows-api (~> 0.4.4)
       wmi-lite (~> 1.0)
-    chef-config (12.10.11)
+    chef-config (12.10.13)
       fuzzyurl (~> 0.8.0)
       mixlib-config (~> 2.0)
       mixlib-shellout (~> 2.0)
@@ -583,7 +583,7 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    r-train (0.10.5)
+    r-train (0.10.6)
       docker-api (~> 1.26.2)
       json (~> 1.8)
       mixlib-shellout (~> 2.1)

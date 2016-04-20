@@ -133,7 +133,7 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    r-train (0.10.5)
+    r-train (0.10.6)
       docker-api (~> 1.26.2)
       json (~> 1.8)
       mixlib-shellout (~> 2.1)
