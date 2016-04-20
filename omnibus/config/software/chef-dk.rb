@@ -31,7 +31,11 @@ dependency "liblzma"
 dependency "zlib"
 
 # For Delivery build nodes
-dependency "git"
+# The default git resource doesn't support windows.
+# TODO: Add windows support for bundling in git
+unless windows?
+  dependency "git"
+end
 
 # For berkshelf
 dependency "libarchive"
