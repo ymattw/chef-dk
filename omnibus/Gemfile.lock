@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/chef/omnibus-software.git
-  revision: e0d2d90c23f779d263050b0d8d67f3e3a018cf3f
-  branch: unified_workflow
+  revision: b29ed53774ff9a262729df63e2a92ff843074683
   specs:
     omnibus-software (4.0.0)
       omnibus (>= 5.2.0)
