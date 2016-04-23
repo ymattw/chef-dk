@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/chef/omnibus-software.git
-  revision: d3356ea65e8cb356a8e9f7f0058d0515a76c0f2c
+  revision: 1999c58a7f95a0af1f304623a4c0c6a9d89fb732
   branch: delivery_cli
   specs:
     omnibus-software (4.0.0)
@@ -102,7 +102,7 @@ GEM
     hashie (3.4.3)
     hitimes (1.2.3)
     hitimes (1.2.3-x86-mingw32)
-    httpclient (2.7.1)
+    httpclient (2.7.2)
     iostruct (0.0.4)
     ipaddress (0.8.3)
     jmespath (1.2.4)
