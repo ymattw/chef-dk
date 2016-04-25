@@ -88,6 +88,7 @@ ACCEPTABLE_OUTDATED_GEMS = [
   "timers",
   "unicode-display_width",
   "varia_model",
+  "httpclient",
 ]
 
 #

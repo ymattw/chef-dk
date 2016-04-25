@@ -88,6 +88,13 @@ GIT
       ohai
       uuidtools
 
+GIT
+  remote: git://github.com/tyler-ball/ffi-rzmq-core.git
+  revision: f9a09f8a8c17bf6d07343fe1991f118d5d1f0aaa
+  specs:
+    ffi-rzmq-core (1.0.4)
+      ffi (~> 1.9)
+
 PATH
   remote: .
   specs:
@@ -240,8 +247,6 @@ GEM
     ffi (1.9.10-x86-mingw32)
     ffi-rzmq (2.0.4)
       ffi-rzmq-core (>= 1.0.1)
-    ffi-rzmq-core (1.0.4)
-      ffi (~> 1.9)
     ffi-yajl (2.2.3)
       libyajl2 (~> 1.2)
     fission (0.5.0)
@@ -514,7 +519,7 @@ GEM
       wmi-lite (~> 1.0)
     mixlib-versioning (1.1.0)
     molinillo (0.4.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     nenv (0.3.0)
@@ -582,10 +587,10 @@ GEM
     pry-stack_explorer (0.4.9.2)
       binding_of_caller (>= 0.7)
       pry (>= 0.9.11)
-    r-train (0.10.7)
+    r-train (0.10.8)
       docker-api (~> 1.26.2)
       json (~> 1.8)
-      mixlib-shellout (~> 2.1)
+      mixlib-shellout (~> 2.0)
       net-scp (~> 1.2)
       net-ssh (>= 2.9, < 4.0)
       winrm (~> 1.6)
@@ -650,7 +655,7 @@ GEM
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 0.3)
     ruby-prof (0.15.9)
-    ruby-progressbar (1.7.5)
+    ruby-progressbar (1.8.0)
     ruby-shadow (2.5.0)
     rubyntlm (0.6.0)
     rubyzip (1.2.0)
@@ -676,7 +681,7 @@ GEM
     solve (2.0.3)
       molinillo (~> 0.4.2)
       semverse (~> 1.1)
-    specinfra (2.56.1)
+    specinfra (2.57.0)
       net-scp
       net-ssh (>= 2.7, < 4.0)
       net-telnet
@@ -774,6 +779,7 @@ DEPENDENCIES
   dep_selector
   fauxhai
   ffi
+  ffi-rzmq-core!
   foodcritic (>= 6.1.1)
   github_changelog_generator
   guard
