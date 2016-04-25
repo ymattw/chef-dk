@@ -1,14 +1,6 @@
 GIT
-  remote: https://github.com/chef/omnibus-software.git
-  revision: 1999c58a7f95a0af1f304623a4c0c6a9d89fb732
-  branch: delivery_cli
-  specs:
-    omnibus-software (4.0.0)
-      omnibus (>= 5.2.0)
-
-GIT
   remote: https://github.com/chef/omnibus.git
-  revision: a83ee04eff7f9d6b609d1ac9c300d3c714513a43
+  revision: 201919712a1fd90271bfcea7196494d0e61a0d21
   specs:
     omnibus (5.4.0)
       aws-sdk (~> 2)
@@ -32,6 +24,12 @@ GIT
       multipart-post (~> 1.2)
       progressbar
       zhexdump (>= 0.0.2)
+
+PATH
+  remote: ../../omnibus-software
+  specs:
+    omnibus-software (4.0.0)
+      omnibus (>= 5.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -186,7 +184,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    ruby-progressbar (1.7.5)
+    ruby-progressbar (1.8.0)
     rubyntlm (0.6.0)
     rubyzip (1.2.0)
     safe_yaml (1.0.4)
