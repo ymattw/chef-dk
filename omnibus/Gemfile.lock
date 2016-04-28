@@ -7,7 +7,7 @@ GIT
 
 GIT
   remote: https://github.com/chef/omnibus.git
-  revision: a83ee04eff7f9d6b609d1ac9c300d3c714513a43
+  revision: e2b6cfa813277222f47fde02b9a4a4437350989f
   specs:
     omnibus (5.4.0)
       aws-sdk (~> 2)
@@ -101,7 +101,7 @@ GEM
     hashie (3.4.3)
     hitimes (1.2.3)
     hitimes (1.2.3-x86-mingw32)
-    httpclient (2.7.1)
+    httpclient (2.7.2)
     iostruct (0.0.4)
     ipaddress (0.8.3)
     jmespath (1.2.4)
@@ -123,7 +123,7 @@ GEM
       rspec-mocks (~> 3.2)
     mixlib-cli (1.5.0)
     mixlib-config (2.2.1)
-    mixlib-install (1.0.9)
+    mixlib-install (1.0.11)
       artifactory
       mixlib-shellout
       mixlib-versioning
@@ -134,7 +134,7 @@ GEM
       wmi-lite (~> 1.0)
     mixlib-versioning (1.1.0)
     molinillo (0.4.4)
-    multi_json (1.11.2)
+    multi_json (1.11.3)
     multipart-post (1.2.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -185,7 +185,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    ruby-progressbar (1.7.5)
+    ruby-progressbar (1.8.0)
     rubyntlm (0.6.0)
     rubyzip (1.2.0)
     safe_yaml (1.0.4)
@@ -212,7 +212,7 @@ GEM
       hashie (>= 2.0.2, < 4.0.0)
     win32-process (0.8.3)
       ffi (>= 1.0.0)
-    winrm (1.7.3)
+    winrm (1.8.0)
       builder (>= 2.1.2)
       gssapi (~> 1.2)
       gyoku (~> 1.0)
