@@ -42,5 +42,5 @@ else
 
   # This has to be the last thing we run so that we return the correct exit code
   # to the Ci system.
-  sudo chef verify --unit
+  sudo chef verify --unit --smoke --integration
 fi
