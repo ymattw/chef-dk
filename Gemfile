@@ -63,7 +63,8 @@ group(:omnibus_package) do
   gem "mixlib-versioning"
   gem "artifactory"
   # The opscode-pushy-client version is pinned by "rake dependencies", which grabs the current version from omnibus.
-  gem "opscode-pushy-client", github: "chef/opscode-pushy-client", branch: "1.3.4"
+  # TODO don't merge this, let it pick up the release after that is done
+  gem "opscode-pushy-client", github: "chef/opscode-pushy-client", branch: "windows_deps"
   gem "ffi-rzmq-core"
   gem "knife-push"
 
@@ -92,19 +93,4 @@ end
 # Everything except AIX and Windows
 group(:linux, :bsd, :mac_os_x, :solaris) do
   gem "ruby-shadow", platform: :ruby
-end
-
-# TODO delete this when we figure out how to include the pushy windows dependencies
-# correctly
-platforms :mswin, :mingw do
-  gem "ffi"
-  gem "rdp-ruby-wmi"
-  gem "windows-api"
-  gem "windows-pr"
-  gem "win32-api"
-  gem "win32-dir"
-  gem "win32-event"
-  gem "win32-mutex"
-  gem "win32-process", "~> 0.8.2"
-  gem "win32-service"
 end
